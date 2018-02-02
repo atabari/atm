@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ATM d.o.o</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://bootstraptaste.com" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- Theme skin -->
+<link href="skins/default.css" rel="stylesheet" />
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="background-class">
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header col-lg-12 col-md-12">
+                    <a href="index.html"><img src="img/ATM.gif"></a>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section id="featured">
+	<!-- start slider -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2" >
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider main-slider">
+            <ul class="slides">
+              <li>
+                <img src="img/0_naslovna/1.jpg" alt="" />
+              </li>
+              <li>
+				  <img src="img/0_naslovna/2.jpg" alt="" />
+              </li>
+            </ul>
+        </div>
+	<!-- end slider -->
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>PROIZVODI I USLUGE</h4>
+								<div class="icon">
+								<i class="fa fa-sort-amount-asc fa-3x"></i>
+								</div>
+								<p>
+									Mjerno-regulaciona oprema, termovizija...
+								</p>
+							</div>
+							<div class="box-bottom">
+								<button onclick=pokaziProizvode()>Više</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>ZASTUPNIŠTVO</h4>
+								<div class="icon">
+								<i class="fa fa-sign-out fa-3x"></i>
+								</div>
+								<p>ELEKTRON ERMA-STRMEC, FESTO...</p>
+							</div>
+							<div class="box-bottom">
+								<button onclick=pokaziZastupnistvo()>Više</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>REFERENCE</h4>
+								<div class="icon">
+								<i class="fa fa-users fa-3x"></i>
+								</div>
+								<p style="margin-bottom: 32px;">
+									Naši partneri...
+								</p>
+							</div>
+							<div class="box-bottom">
+								<button onclick=pokaziReference()>Više</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>O NAMA</h4>
+								<div class="icon">
+								<i class="fa fa-id-card fa-3x"></i>
+								</div>
+								<p>
+									ATM je specijalizirana inžinjering firma za...
+							</div>
+							<div class="box-bottom">
+								<button onclick=pokaziOnama()>Više</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="proizvodi" class="row" style="display: none">
+			<div class="col-lg-12">
+				<div class="header">
+					<h1>PROIZVODI</h1>
+					<div class="add_info">
+						<ul id="usluge-tab" class="nav nav-tabs">
+							<li class="active"> <a href="#mr-oprema" data-toggle="tab">MJERNO-REGULACIONA OPREMA</a> </li>
+							<li><a href="#termovizija" data-toggle="tab">TERMOVIZIJA</a> </li>
+						</ul>
+
+						<div class="tab-content col-lg-12 col-sm-12 col-xs-12">
+							<div class="tab-pane fade in active refence-padding" id="mr-oprema">
+								<p>U sklopu svojih usluga, ATM d.o.o. Sarajevo je u mogućnosti da vam ponudi proizvodni program, servisa, inžinjering poslova montaže opreme, u području mjerenja, regulacije, automatizacije, centralnog nadzora i upravljanja u industriji:</p>
+
+								<div class="usluge-lista col-lg-6">
+									<strong><p>• Mjerenje regulacija i temperature</p>
+									<p>• Mjerenje i regulacija pritiska</p>
+									<p>• Mjerenja i regulacija protoka</p>
+									<p>• Mjerenje i regulacija nivoa</p>
+									<p>• Mjerenje i regulacija vlage</p>
+									<p>• Analize</p>
+									<p>• Brojači okretaja</p></strong>
+								</div>
+
+									<!-- Slider -->
+									<div id="usluge-slider-mjerna-oprema" class="flexslider main-slider col-lg-4">
+										<ul class="slides slides-usluge">
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s211-1.jpg" style="alignment: center;" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s212-1.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s213-1.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s214-1.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s215-1.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s216-1.jpg" alt="" />
+											</li>
+										</ul>
+									</div>
+
+								<!-- end slider -->
+
+								<div class="usluge-lista col-lg-6">
+									<strong><p>VENTILI</p>
+									<p>• Kuglasti ventili</p>
+									<p>• Leptir ventili</p>
+									<p>• Zasun ventili</p>
+									<p>• Nepovratni ventili</p>
+									<p>• Sigurnosni ventili</p>
+									<p>• Automatski ventili</p>
+									<p>• Pneumatski uređaji za upravljenje</p>
+									<p>• Elektro uređaji za upravljanje</p>
+									<p>• Regulatori položaja-pozicioneri</p></strong>
+								</div>
+
+								<!-- Slider -->
+								<div id="usluge-slider-usluge2" class="flexslider main-slider  col-lg-4">
+									<ul class="slides slides-usluge">
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s221.jpg" alt="" />
+										</li>
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s222.jpg" alt="" />
+										</li>
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s223.jpg" alt="" />
+										</li>
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s224.jpg" alt="" />
+										</li>
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s225.jpg" alt="" />
+										</li>
+										<li>
+											<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s226.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+								<!-- end slider -->
+								</div>
+							<div class="tab-pane fade refence-padding" id="termovizija">
+								<div class="box-collateral box-tags">
+									<h5>VENTILI</h5>
+									<div class="usluge-lista col-lg-6">
+										<strong><p>• Kuglasti ventili</p>
+										<p>• Leptir ventili</p>
+										<p>• Zasun ventili</p>
+										<p>• Nepovratni ventili</p>
+										<p>• Sigurnosni ventili</p>
+										<p>• Automatski ventili</p>
+										<p>• Pneumatski uređaji za upravljenje</p>
+										<p>• Elektro uređaji za upravljanje</p>
+										<p>• Regulatori položaja-pozicioneri</p></strong>
+									</div>
+
+									<!-- Slider -->
+									<div id="usluge-slider-termovizija" class="flexslider main-slider usluge-slider col-lg-6">
+										<ul class="slides slides-usluge">
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s221.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s222.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s223.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s224.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s225.jpg" alt="" />
+											</li>
+											<li>
+												<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s226.jpg" alt="" />
+											</li>
+										</ul>
+									</div>
+									<!-- end slider -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="zastupnistvo" class="row" style="display: none">
+			<div class="col-lg-12">
+				<div class="header">
+					<h1>ZASTUPNIŠTVO</h1>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="solidline">
+							</div>
+						</div>
+					</div>
+					<h2>ELEKTRON ERMA-STRMEC</h2>
+					<p>ELEKTRON ERMA-STRMEC teži proizvodnji kvalitetne opreme za mjerenje, regulaciju, procesno upravljanje te pružanje što je moguće bolje korisničke podrške. Tijekom godina tvrtka je mijenjala i dopunjavala svoj proizvodni program te se razvila u najvećeg hrvatskog proizvođača takve opreme i usluga</p>
+					<a href="http://www.elektron.hr/">http://www.elektron.hr</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="reference" class="row" style="display: none">
+			<div class="col-lg-12">
+				<div class="header">
+					<h1>REFERENCE</h1>
+					<div class="add_info">
+						<ul id="reference-tab" class="nav nav-tabs">
+							<li class="active"> <a href="#prvi" data-toggle="tab">ENERGETIKA </br> TOPLOTNA ENERGIJA</a> </li>
+							<li><a class="tab-height" href="#drugi" data-toggle="tab">FIRME ZA IZVOĐENJE RADOVA U</br> PODRUČJU GRIJANJA I KLIMATIZACIJE</a> </li>
+							<li><a class="tab-height" href="#treci" data-toggle="tab">JAVNE USTANOVE</a></li>
+							<li><a class="tab-height" href="#cetvrti" data-toggle="tab">INDUSTRIJA</a></li>
+							<li><a class="tab-height" href="#peti" data-toggle="tab">PREHRAMBENA </br>INDUSTRIJA</a></li>
+							<li><a class="tab-height" href="#sesti" data-toggle="tab">HEMIJSKA </br>INDUSTRIJA</a></li>
+							<li><a class="tab-height" href="#sedmi" data-toggle="tab">TERMOVIZIJA</a></li>
+						</ul>
+
+						<div class="tab-content col-lg-12 col-sm-12 col-xs-12">
+							<div class="tab-pane fade in active refence-padding" id="prvi">
+								<strong><p>- JP ELEKTROPRIVREDA BiH - Sarajevo</p>
+								<p>- UNIS ENERGOTEHNIKA – Vogošća</p>
+								<p>- UNIS ENERGETIKA – Sarajevo</p>
+								<p>- UNIS ENERGETIKA – Travnik</p>
+								<p>- ENERGETIKA – Konjic</p>
+								<p>- JP TOPLANE SARAJEVO - Sarajevo</p>
+								<p>- TOPLANA – Tešanj</p>
+								<p>- KOTLOVNICE SFOR-a – Sarajevo i Tuzla</p>
+								<p>- TOPLANA BANOVIĆI – Banovići</p>
+								<p>- DELING – Tuzla</p>
+								<p>- ELGRAD - Vinac</p></strong>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="drugi">
+								<div class="box-collateral box-tags">
+									<strong><p>- ALFA THERM - Mostar</p>
+									<p>- ACING – Sarajevo</p>
+									<p>- UNITECH – Sarajevo</p>
+									<p>- ENERGOINVEST – IAT – Sarajevo</p>
+									<p>- EL – TE3 - Sarajevo</p>
+									<p>- ELKOMONT – Sarajevo</p>
+									<p>- ELMOVOLT – Tuzla</p>
+									<p>- GMC Inženjering. - Sarajevo</p>
+									<p>- ERDGAS - Sarajevo</p>
+									<p>- KLIMAVENT – Sarajevo</p>
+									<p>- UNIONINVEST – Sarajevo</p>
+									<p>- MERKANTILE - Sarajevo</p>
+									<p>- UNIMONT – Sarajevo</p>
+									<p>- KODELMONT – Tuzla</p>
+									<p>- SINCOM – Tuzla</p>
+									<p>- PROMING – Žepče</p>
+									<p>- HIDROMETAL – Sarajevo</p>
+									<p>- CGV METALI – Maglaj</p>
+									<p>- ELCOM – Tuzla</p>
+									<p>- GRIZELJ – Sarajevo</p>
+									<p>- RUDSTROJ – Kakanj</p>
+									<p>- IBEJ – Sarajevo</p>
+									<p>- TOPLING – Prnjavor</p>
+									<p>- SINTAL – Sarajevo</p>
+									<p>- ADRIA BIH – Zenica</p>
+									<p>- GANGES – Doboj</p>
+									<p>- ELSE – Visoko</p>
+									<p>- PLINOMATIC – Kiseljak</p>
+									<p>- KGH TEHNIKA - Hadžići</p>
+									<p>- ELEKTROKOVINA – Mostar</p>
+									<p>- TERMOS – Mostar</p>
+									<p>- TMD INŽENJERING – Dubica</p>
+									<p>- JUMO – Doboj Istok</p>
+									<p>- VINO VITA – Mostar</p>
+									<p>- NEOMET – Prijedor</p>
+									<p>- EURO M – Sarajevo</p>
+									<p>- REGENERACIJA – Velika Kladuša</p>
+									<p>- ESTA – Busovača</p></strong>
+								</div>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="treci">
+								<div class="box-collateral box-tags">
+									<strong><p>- KLINIČKO UNIVERZITETSKI CENTAR – Sarajevo</p>
+									<p>- OPĆA BOLNICA "PRIM. DR. ABDULAH NAKAŠ" – Sarajevo</p>
+									<p>- HOTEL GRAND – Sarajevo</p>
+									<p>- INTEREX – Sarajevo, Tuzla i Banja Luka</p>
+									<p>- INSTITUT ZA HIDROTEHNIKU – Sarajevo</p>
+									<p>- KBC ZENICA – Zenica</p>
+									<p>- PARLAMENT BIH – Sarajevo</p>
+									<p>- AMBASADA N.R. KINE – Sarajevo</p>
+									<p>- DOM ZDRAVLJA BUGOJNO – Bugojno</p>
+									<p>- VODOVOD I KANALIZACIJA ISTOČNO SARAJEVO – Istočno Sarajevo</p>
+									<p>- INZA - Sarajevo</p></strong>
+								</div>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="cetvrti">
+								<div class="box-collateral box-tags">
+									<strong><p>- NATRON HAYAT – Maglaj</p>
+									<p>- KRIVAJA – Zavidovići</p>
+									<p>- STANDARD – Sarajevo</p>
+									<p>- KOMAR – Donji Vakuf</p>
+									<p>- POBJEDA RUDET – Goražde</p>
+									<p>- POBJEDA GINEX – Goražde</p>
+									<p>- PALAVRA – Nova Bila</p>
+									<p>- BARIT - Kreševo</p>
+									<p>- DIP KUPRES – Kupres</p>
+									<p>- BOSNA FURNIR – Visoko</p>
+									<p>- IGM – Visoko</p>
+									<p>- GRAEWE TADIV – Konjic</p>
+									<p>- KAPIS – Tomislavgrad</p>
+									<p>- ZOVKO OIL – Žepče</p>
+									<p>- PREDUZEĆE ZA PUTEVE – Mostar</p>
+									<p>- UNIGRADNJA – Sarajevo</p>
+									<p>- TVORNICA CEMENTA – Kakanj</p>
+									<p>- SILVESTRA – Kakanj</p>
+									<p>- STOLARIJA RAPIĆ – Gradiška</p>
+									<p>- RFK VALJČIĆI - Konjic</p></strong>
+								</div>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="peti">
+								<div class="box-collateral box-tags">
+									<strong><p>- KLAS – Sarajevo</p>
+									<p>- SPRIND – Sarajevo</p>
+									<p>- VEGAFRUIT – Doboj Istok</p>
+									<p>- AGROKOMERC – Velika Kladuša</p>
+									<p>- ŽITOPROMET – Mostar</p>
+									<p>- SA & JACOM - Sarajevo</p>
+									<p>- SUBAŠIĆ - Jelah</p>
+									<p>- MILCH PRODUCT – SMAJIĆ – Čelić</p>
+									<p>- BIHAĆKA PIVOVARA – Bihać</p>
+									<p>- LIJANOVIĆI – Široki Brijeg</p>
+									<p>- HPK – Draksenić</p>
+									<p>- HEPOK – Mostar</p>
+									<p>- BIMAL – Brčko</p>
+									<p>- STUDEN AGRANA – Brčko</p>
+									<p>- SEMBERKA – Janja</p>
+									<p>- SARAJEVSKI KISELJAK - Kiseljak</p></strong>
+								</div>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="sesti">
+								<div class="box-collateral box-tags">
+									<strong><p>- DITA – Tuzla</p>
+									<p>- ASTRO – Sarajevo</p>
+									<p>- GIKIL - Lukavac</p>
+									<p>- POLIOLCHEM – Tuzla</p>
+									<p>- BITUMENKA – Sarajevo</p>
+									<p>- FDS – Sarajevo</p>
+									<p>- SUR-TEC EUROSJAJ – Konjic</p></strong>
+								</div>
+							</div>
+
+							<div class="tab-pane fade refence-padding" id="sedmi">
+								<div class="box-collateral box-tags">
+									<strong><p>- AGROCENTAR – Gornji Vakuf</p>
+									<p>- AVAZ - Sarajevo</p>
+									<p>- BITUMENKA - Sarajevo</p>
+									<p>- COCA-COLA - Sarajevo</p>
+									<p>- ENKER - Tešanj</p>
+									<p>- FARMKO LIJANOVIĆ – Široki Brijeg</p>
+									<p>- FEAL – Široki Brijeg</p>
+									<p>- GIKIL - Lukavac</p>
+									<p>- GRIJANJE KAKANJ - Kakanj</p>
+									<p>- KOMAR – Donji Vakuf</p>
+									<p>- MINISTARSTVO ODBRANE BIH - Sarajevo</p>
+									<p>- KONJIC KARTON - Konjic</p>
+									<p>- KBC KOŠEVO - Sarajevo</p>
+									<p>- KRIVAJA ZAVIDOVIĆI - Zavidovići</p>
+									<p>- KRIVAJA ŽEPČE - Žepče</p>
+									<p>- MLINPEK - Bugojno</p>
+									<p>- NATRON HAYAT - Maglaj</p>
+									<p>- PALAVRA – Nova Bila</p>
+									<p>- PRIVATNE KUĆE - Sarajevo</p>
+									<p>- RAFINERIJA NAFTE BOSANSKI BROD – Bosanski Brod</p>
+									<p>- SPRIND - Sarajevo</p>
+									<p>- SSL - Lukavac</p>
+									<p>- STANDARD - Sarajevo</p>
+									<p>- STUDENTSKI DOMOVI NEDŽARIĆI - Sarajevo</p>
+									<p>- TAMEX - Busovača</p>
+									<p>- TOPLANA TRAVNIK - Travnik</p>
+									<p>- TOPLANA BANJA LUKA – Banja Luka</p>
+									<p>- TOPLANA ČELINAC - Čelinac</p>
+									<p>- TOPLANA GRADIŠKA - Gradiška</p>
+									<p>- TOPLANA PALE - Pale</p>
+									<p>- TOPLANA PRIJEDOR - Prijedor</p>
+									<p>- TOPLANA TEŠANJ - Tešanj</p>
+									<p>- UNIS ENERGETIKA - Sarajevo</p>
+									<p>- VITALES – Nova Bila</p>
+									<p>- ŽICA - Sarajevo</p>
+									<p>- AMBASADA SJEDINJENIH AMERIČKIH DRŽAVA – Sarajevo</p>
+									<p>- CENTRALNA BANKA BIH – Sarajevo</p>
+									<p>- UNITIC – Sarajevo</p>
+									<p>- TERME ILIDŽA - Ilidža</p></strong>
+								</div>
+							</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="onama" class="row" style="display: none">
+			<div class="col-lg-12">
+				<div class="header">
+					<h1>O NAMA</h1>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="solidline">
+							</div>
+						</div>
+					</div>
+					<p><strong>ATM</strong> je specijalizirana inžinjering firma za projektiranje, proizvodnju, montažu, puštanje u rad i održavanje mjerno-regulacione opreme i sistema automatskog upravljanja u industriji.</p>
+					<p>Višegodisnje iskustvo naših stručnjaka, stečeno na izgradnji velikog broja postrojenja: termoenergetike, crne i obojene metalurgije, petrohemije, prehrambene industrije, drvne industrije i industrije građevinskog materijala, razlog je da nam se obratite sa povjerenjem.</p>
+					<p>Sarađujući sa velikim brojem svijetskih proizvođača mjerno-regulacione opreme možemo Vam u okviru naše djelatnosti ponuditi slijedeće:</p>
+					<strong><p>Projektiranje</p>
+					<p>Opremanje industrijskih postrojenja</p>
+					<p>Izvođenje</strong> (do nivoa "ključ u ruke")</p>
+					<p><strong>Održavanje mjerno regulacione opreme u eksploataciji </strong>(defektacija i otklanjanje kvarova, kontinuirano održavanje, remontne aktivnosti i slično)</p>
+					<strong><p>Pneumatika</p>
+					<p>Stručne konsultacije</p>
+					<p>Nabavka rezervnih dijelova</p>
+					<p>Termovizijsko snimanje</p></strong>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Galerija</h4>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s213_small.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s213_small.jpg" alt="">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s231%20PLC_small.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/2_proizvodi_usluge/1%20Mjerno-regulaciona%20oprema/s231%20PLC_small.jpg" alt="">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/2_proizvodi_usluge/2%20Termovizija/s311_small.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/2_proizvodi_usluge/2%20Termovizija/s311_small.jpg" alt="">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/2_proizvodi_usluge/2%20Termovizija/s332_small.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/2_proizvodi_usluge/2%20Termovizija/s332_small.jpg" alt="">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<p class="contact-us"><strong>KONTAKT</strong></p>
+					<p>
+						<i class="font-icon-phone"></i> + 387 33 768 115 <br>
+						<i class="fa fa-fax"></i> + 387 33 768 116 <br>
+						<i class="font-icon-social-email"></i> dzevad@atm.ba
+					</p>
+
+					<address>
+						<strong>Radno vrijeme: </strong> od 08-16 h<br>
+						<strong>Adresa: </strong>Nedima Filipovića 12<br>
+					</address>
+					<div >
+						<ul class="social-network">
+							<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-8" style="float: right">
+					<p class="contact-us"><strong>LOKACIJA</strong></p>
+						<iframe class="google-map"  frameborder="0" style="border:0"
+								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJk7t8CmzJWEcREAgneKOsxPE&key=AIzaSyAly9klttBVnMPWgP9gyOjby7hsNqc7W-Y" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div style="float: right">&copy; DTS 2017 All right reserved. </div>
+		</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    function pokaziProizvode() {
+        document.getElementById("proizvodi").style.display = "block";
+        document.getElementById("zastupnistvo").style.display = "none";
+        document.getElementById("reference").style.display = "none";
+        document.getElementById("onama").style.display = "none";
+
+    }
+
+    function pokaziZastupnistvo() {
+        document.getElementById("proizvodi").style.display = "none";
+        document.getElementById("zastupnistvo").style.display = "block";
+        document.getElementById("reference").style.display = "none";
+        document.getElementById("onama").style.display = "none";
+
+    }
+
+    function pokaziReference() {
+        document.getElementById("proizvodi").style.display = "none";
+        document.getElementById("zastupnistvo").style.display = "none";
+        document.getElementById("reference").style.display = "block";
+        document.getElementById("onama").style.display = "none";
+
+    }
+
+    function pokaziOnama() {
+        document.getElementById("proizvodi").style.display = "none";
+        document.getElementById("zastupnistvo").style.display = "none";
+        document.getElementById("reference").style.display = "none";
+        document.getElementById("onama").style.display = "block";
+
+    }
+</script>
+</body>
+</html>
